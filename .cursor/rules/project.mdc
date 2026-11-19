@@ -1,0 +1,24 @@
+---
+description: Project rules for Problem Framer AI
+alwaysApply: true
+---
+
+# Project: Problem Framer AI
+A Streamlit chat app that interviews a user about a business problem and outputs a Business Requirements Brief. Built with LangChain (Anthropic Claude) and deployed on the free Streamlit Community Cloud tier.
+
+## Hard rules
+- Python 3.11+, type hints on all functions, short docstrings.
+- The system prompt lives in prompts/system_prompt.md. NEVER hardcode or rewrite it in Python. Load it from the file.
+- Fill prompt variables with plain str.replace for {current_date}, {metrics_reference}, {decisions_reference}, {lens_reference}. Do not use LangChain prompt templates for the system prompt.
+- Never invent library APIs. If unsure, run `pip show <package>` and read the installed package's docs or source before writing code.
+- API keys come from st.secrets or the user's sidebar input. Never print, log, or commit a key.
+- Free-tier friendly: pandas only for data, no vector databases, no heavy dependencies, cache with st.cache_data.
+- Keep every file under about 250 lines. One responsibility per module (config, chain, validators, parser, export, UI helpers).
+- Write the test first or alongside the code (pytest, no real API calls in tests; use a fake model).
+- After each change, tell me exactly how to run it and what I should see.
+- Do not change files I did not ask about. List every file you touched.
+- Ask before adding any new dependency.
+
+## Provenance tags
+The brief marks values with [Stated] or [Suggested]. Tags are data: parse and render them, never remove them silently.
+

@@ -1,0 +1,33 @@
+﻿decision_id,decision_type,decision_label,example_phrasing,typical_owner_roles,candidate_metric_ids,typical_recurrence,domain_tags
+DEC-001,staffing,Change staffing levels,"hire more people, move people around, or reduce headcount",Operations Manager; Head of Support; HR,CSV-005;CSV-004;CSV-001;BMC-138;BMC-125,either,Operations; Customer Support
+DEC-002,process_change,Change a process or workflow,"change how work is done, for example the escalation or approval process",Operations Manager; Process Owner,CSV-001;CSV-007;BMC-162;BMC-163;BMC-157,either,Operations; Customer Support
+DEC-003,segment_priority,Prioritize a customer segment,focus effort or budget on the segments that matter most,Head of Marketing; Head of Sales; Strategy,BMC-020;BMC-019;BMC-018;BMC-045;BMC-182,either,Marketing; Strategy
+DEC-004,budget_allocation,Reallocate budget across channels or teams,move spend to what works and away from what does not,Head of Marketing; CFO,BMC-017;BMC-039;BMC-031;BMC-020;BMC-032,recurring,Marketing; Finance
+DEC-005,pricing,Adjust pricing or discounts,"raise, lower, or restructure prices",Head of Product; Head of Sales; CFO,BMC-024;BMC-049;BMC-045;BMC-182;BMC-038,either,Marketing; Finance
+DEC-006,go_no_go,"Launch, continue, or stop a product or initiative",decide whether a project is worth continuing or funding,Executive Sponsor; Product Owner; CFO,BMC-082;BMC-009;BMC-186;BMC-083;BMC-190,one-time,Strategy; Finance
+DEC-007,capacity_investment,Invest in capacity or equipment,"buy, upgrade, or expand capacity",Operations Director; CFO,BMC-125;BMC-147;BMC-157;BMC-121;BMC-082,one-time,Operations
+DEC-008,sourcing,Change supplier or sourcing,"switch, add, or drop a supplier",Procurement; Supply Chain Director,BMC-155;BMC-144;BMC-073;BMC-163;BMC-150,either,Operations
+DEC-009,inventory_policy,Adjust inventory policy,change stock levels or reorder rules,Supply Chain Director; Operations Manager,BMC-137;BMC-131;BMC-133;BMC-136;BMC-068,recurring,Operations
+DEC-010,retention_program,Improve customer retention,reduce customers leaving and keep more of them,Head of Customer Success; Head of Marketing,BMC-016;BMC-178;BMC-183;BMC-021;BMC-019,recurring,Marketing; Strategy
+DEC-011,service_level,Improve customer service levels,fix slow or poor service and meet service targets,Head of Support; Customer Success,BMC-034;BMC-021;CSV-006;CSV-001;CSV-008;CSV-002,recurring,Customer Support
+DEC-012,workforce_retention,Reduce employee turnover or fix hiring,keep staff longer or hire faster,HR Director; Department Heads,BMC-093;BMC-088;BMC-101;BMC-098;BMC-102,recurring,HR
+DEC-013,cost_control,Tighten cost controls,cut or contain costs without hurting results,CFO; Operations Director,BMC-066;BMC-051;BMC-052;BMC-073;BMC-049,either,Finance; Operations
+DEC-014,cash_management,Improve cash flow or working capital,"free up cash tied in receivables, payables, or stock",CFO; Treasurer,BMC-059;BMC-064;BMC-063;BMC-131;BMC-074,recurring,Finance
+DEC-015,sales_focus,Focus sales effort on the right opportunities,decide where reps spend their time,Sales Leadership; Revenue Operations,SAL-001;SAL-002;BMC-200;SAL-005;SAL-006,recurring,Sales
+DEC-016,sales_process,Fix the sales process,speed up or improve conversion through the funnel,Sales Leadership; Sales Operations,BMC-193;SAL-004;SAL-005;BMC-200;SAL-006,either,Sales
+DEC-017,data_trust,Decide whether the data is reliable enough to act on,decide whether to trust a number or fix the data first,Data Owner; Analytics Lead,DQ-001;DQ-002;DQ-003;DQ-004;DQ-006,either,Data
+DEC-018,safety_priority,Prioritize safety interventions,"decide which hazards, airports, or fleets to address first",Safety Manager; Accountable Executive,AVS-022;AVS-006;AVS-020;AVS-004;AVS-054,recurring,Aviation Safety
+DEC-019,safety_training,Update safety protocols or training,change procedures or training after events or trends,Safety Manager; Training Manager,AVS-048;AVS-030;AVS-043;AVS-044;AVS-050,either,Aviation Safety
+DEC-020,safety_actions,Close safety audit gaps and corrective actions,clear overdue actions and findings,Safety Manager; Quality Manager,AVS-018;AVS-019;AVS-021;AVS-049;AVS-053,recurring,Aviation Safety
+DEC-021,crew_fatigue,Change crew scheduling or fatigue controls,"adjust rosters, duty limits, or rest rules",Crew Planning; Safety Manager,AVS-027;AVS-028;AVS-029,either,Aviation Safety; Aviation Operations
+DEC-022,maintenance_priority,Allocate maintenance resources,decide where maintenance effort and parts go,Maintenance Director; Engineering,AVS-031;AVS-032;AVS-030;BMC-140;BMC-141,either,Aviation Safety; Operations
+DEC-023,schedule_buffers,Adjust flight schedules or turnaround buffers,"change block times, buffers, or rotations",Network Planning; Operations Control,AVO-001;AVO-007;AVO-006;AVO-003;AVO-002,either,Aviation Operations
+DEC-024,delay_reduction,Reduce delays at an airport or hub,target the biggest causes of lateness at a location,Operations Control; Station Manager,AVO-001;AVO-008;AVO-002;AVO-006;AVO-007,either,Aviation Operations
+DEC-025,network_capacity,Adjust route or fleet capacity,"add, cut, or re-gauge capacity on routes",Network Planning; Fleet Planning,AVO-009;AVO-010;AVO-014;AVO-013;AVO-004,either,Aviation Operations
+DEC-026,compliance_response,Meet a compliance or regulatory requirement,close gaps against a rule or audit finding,Compliance Officer; Legal,BMC-104;BMC-108;AVS-053;AVS-033;BMC-115,either,Legal; Aviation Safety
+DEC-027,investment_approval,Approve or reject an investment or acquisition,go or no-go on a deal or major spend,CFO; Corporate Development; Board,BMC-082;BMC-009;BMC-015;BMC-004;BMC-075,one-time,Investment Banking; Finance
+DEC-028,macro_response,Respond to economic conditions,"adjust plans for inflation, rates, or demand shifts",CFO; Strategy,BMC-167;BMC-172;BMC-168;BMC-086;BMC-170,either,Economics; Strategy
+DEC-029,forecasting,Improve forecasts and planning,make demand or revenue forecasts more reliable,Planning Lead; Analytics Lead,BMC-086;BMC-087;BMC-080,recurring,Quantitative Analysis
+DEC-030,experiment_readout,Decide from an experiment or pilot,"roll out, iterate, or drop a change based on a test",Product Owner; Analytics Lead,BMC-204;BMC-080;BMC-191;BMC-031,one-time,Research; Marketing
+DEC-031,risk_reduction,Reduce risk exposure,"cut financial, legal, or operational risk",CFO; Risk Officer,BMC-085;BMC-115;BMC-113;BMC-010;BMC-104,either,Finance; Legal
+DEC-032,quality_improvement,Improve product or process quality,"reduce defects, scrap, or rework",Quality Manager; Operations Director,BMC-163;BMC-164;BMC-166;BMC-160;BMC-147,either,Operations
