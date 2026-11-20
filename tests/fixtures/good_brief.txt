@@ -1,0 +1,109 @@
+STATUS: BRIEF
+## BUSINESS REQUIREMENTS BRIEF
+Title: Billing Ticket Resolution Time in EU Support
+Prepared for: Head of Customer Support
+Prepared by: Unknown - to be confirmed
+Date: 2026-11-19
+Version: 1.0
+Document status: Ready for review
+Confidence: Medium
+Approval status: Pending
+
+### EXECUTIVE SUMMARY
+Situation: Median ticket resolution time is rising for billing tickets handled by the EU support team.
+Complication: Slower resolutions may reduce customer satisfaction and raise churn.
+Question: How has resolution time changed over 6 months by category and team, and should we hire agents or change escalation?
+Recommended output: Dashboard, refreshed monthly
+Ask of the reader: Confirm the open items in Section 10 so the analysis can start.
+
+### 1. PROBLEM STATEMENT
+Statement: Median ticket resolution time is rising for billing tickets handled by the EU support team.
+
+### 2. BUSINESS CONTEXT
+Function affected: Customer Support [Stated]
+Stakes if unsolved: Slower resolutions may reduce customer satisfaction and raise churn. [Suggested]
+Trigger: Unknown - to be confirmed
+Needed by: Unknown - to be confirmed
+
+### 3. PRIMARY BUSINESS QUESTION
+Question: How did median ticket resolution time change over the last 6 months, broken down by ticket category and team, in order to decide whether to hire agents or change the escalation process?
+Measurable State: Median resolution time in hours, last 6 months [Stated]
+Friction Point: Ticket category and team [Stated]
+Strategic Impact: Hire agents or change the escalation process [Stated]
+Initial hypotheses:
+- H1: The increase may be concentrated in billing tickets rather than spread across all categories. [Suggested]
+- H2: Ticket volume per agent may have risen over the same period. [Suggested]
+
+### 4. SUPPORTING QUESTIONS
+Q1: Which ticket categories show the largest increase in resolution time?
+Metric: Median hours to close by category
+Timeframe: Last 6 months
+Q2: Is the increase concentrated in the EU team?
+Metric: Median hours to close by team
+Timeframe: Last 6 months
+Q3: Did ticket volume per agent rise over the same period?
+Metric: Tickets per agent per week
+Timeframe: Last 6 months
+Q4: How many tickets are escalated, and how long do they wait?
+Metric: Escalation rate and median escalation wait in hours
+Timeframe: Last 6 months
+
+### 5. STAKEHOLDERS
+Primary stakeholder: Head of Customer Support [Stated]
+Primary needs: A clear cause of the slowdown and a hiring or process recommendation. [Stated]
+Reporting cadence: Monthly [Suggested]
+Secondary stakeholders: Team leads: workload visibility [Suggested]
+Consulted: Unknown - to be confirmed
+Informed: Unknown - to be confirmed
+Data provider: Unknown - to be confirmed
+Decision authority: Head of Customer Support [Stated]
+
+### 6. SUCCESS METRICS
+Primary metric: Median resolution time in hours [Stated]
+Secondary metrics: Escalation rate; tickets per agent per week [Suggested]
+Baseline: Unknown - to be established
+Target: Unknown - to be confirmed
+Acceptance criteria: All four supporting questions are answered with data and the Head of Customer Support has reviewed a hire-or-change recommendation. [Suggested]
+
+### 7. SCOPE
+In scope:
+- All tickets closed in the last 6 months [Stated]
+Out of scope:
+- Customer satisfaction scores, because the user did not mention them [Suggested]
+Assumptions:
+- Resolution time means opened-to-closed time in hours [Suggested]
+- The monthly reporting cadence is assumed because the user gave none [Suggested]
+Constraints and dependencies:
+- Access to ticket timestamps and team assignment is required [Suggested]
+Risks:
+- Category labels may be applied inconsistently across teams [Suggested]
+Glossary:
+- Resolution time: Hours from ticket opened to ticket closed [Suggested]
+
+### 8. DATA REQUIREMENTS
+1. Data element: Ticket opened and closed timestamps | Source: Unknown - to be confirmed | Owner: Unknown - to be confirmed | Granularity: Per event | Issues: None known
+2. Data element: Ticket category and assigned team | Source: Unknown - to be confirmed | Owner: Unknown - to be confirmed | Granularity: Per event | Issues: None known
+
+### 9. RECOMMENDED DELIVERABLE
+Primary: Dashboard
+Why: The stakeholder wants regular updates and the decision will repeat as conditions change.
+Alternative: Report
+Use the alternative when: A one-time staffing decision needs detailed evidence.
+Key content: Resolution time trend by category; resolution time by team; tickets per agent; escalation wait time
+Refresh cadence: Monthly
+Blueprint (Dashboard):
+North Star: Median resolution time in hours, because it directly measures the slowdown behind the hire-or-change decision
+Supporting KPIs: Median hours by category; median hours by team; tickets per agent per week; escalation rate; median escalation wait
+Five-second question: Is resolution time getting better or worse, and where?
+Row 1: KPI strip | North Star plus tickets per agent per week, escalation rate, and escalation wait, each against baseline once it is set
+Row 2: Trend | Median resolution time by month over the last 6 months
+Row 3: Breakdown | Median resolution time by ticket category and by team, ranked
+Row 4: Detail | Table of the slowest category and team combinations
+Filters: Month, ticket category, team
+Alerts: Unknown - to be confirmed
+Design rules: One page, no more than 7 visuals, the most important item top-left, consistent definitions from the Glossary
+
+### 10. OPEN QUESTIONS AND DECISIONS NEEDED
+- Who owns the ticket data and how can it be accessed? | Owner: Head of Customer Support | Needed by: Unknown - to be confirmed
+- What resolution time target does the business consider acceptable? | Owner: Head of Customer Support | Needed by: Unknown - to be confirmed
+- Confirm the monthly reporting cadence and the opened-to-closed definition of resolution time. | Owner: Head of Customer Support | Needed by: Unknown - to be confirmed

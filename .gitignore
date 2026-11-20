@@ -1,7 +1,13 @@
+@'
+# Secrets: never commit these
+.streamlit/secrets.toml
+secrets.toml
+.env
+.env.*
+
+# Python and tools
 .venv/
 __pycache__/
 *.pyc
-.env
-.streamlit/secrets.toml
-outputs/
-.DS_Store
+.pytest_cache/
+'@ | Set-Content -Encoding ascii .gitignore

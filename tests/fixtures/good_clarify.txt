@@ -1,0 +1,7 @@
+STATUS: CLARIFY
+## CLARIFICATION NEEDED
+So far I understand: ticket resolution is slower than you want, but I do not know by how much or what you will change.
+1. What decision will you make if the analysis confirms the slowdown? (Example answer: whether to hire more agents or change the escalation process)
+2. Which number do you use to judge speed today? (Example answer: median hours from ticket opened to closed)
+3. Is the slowdown across the board or in one area? (Example answer: mostly billing tickets and the EU team)
+4. Who will act on the results? (Example answer: the Head of Customer Support)

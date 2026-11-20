@@ -1,0 +1,9 @@
+STATUS: CLARIFY
+## CLARIFICATION NEEDED
+So far I understand: ticket resolution is slower than you want, and the Head of Customer Support will decide what to change.
+1. Which number is closest to how you judge speed today? Pick one or write your own:
+   A) Median hours from ticket opened to closed
+   B) Share of tickets closed within a set number of hours
+   C) Average first-response time in hours
+   D) None of these, I will describe it
+These are suggestions, not facts. Your choice enters the brief only after you pick or edit one.
